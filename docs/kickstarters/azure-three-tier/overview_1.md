@@ -5,16 +5,18 @@ title: Overview
 
 # IaC Template for Building a Three-Tier App on Azure
 
-This is a kickstarter IaC tempalte for Azure that can be used as a starting point for you Azure Three Tier application. The tempalte contians a simple Todo application. 
+A kickstarter IaC template for Azure following the Three-Tier architecture design to jumpstart your app creation. 
 
-The todo application contains five basic features and we have designed this application keeping following quality attributes in mind. 
+This repository contains a sample Todo application containing five basic features that demonstrate the use and integration of different Azure services.  
 
-* High-scalability - Scales into millions of requests per minute
-* Availability - Resiliency to even regional data center outages
-* Security - Protected from common security threats for web apps. Like SQL injection, Cross-site-scripting attacks
+The following quality-attributes were considered:
 
-If your project has these requirements this would be a great fit. You can easily get rid of the existing code as it is there just to show how the template works. 
+* High-scalability - Can handle up to 1 million requests per minute
+* Availability - Resiliency to regional data center outages
+* Security - Protected from common web app security threats, such as SQL injection, Cross-site-scripting attacks (XSS)
 
-We have built this keeping the IaC components highly modular if you find any component that you think is not required for the application that you are developing. You can easily get rid of that. This is an open template and if you find anything to add/improve, please go ahead and don't forget to merge it back to this. 
+The template is designed with modularity in mind, allowing flexibility to add/remove resources to cater to different requirements. 
+
+This repository is open to changes. If you have any feedback, suggestions and/or improvements, feel free to create a PR with your changes! 
 
 (Raqeeb, Kamal)
