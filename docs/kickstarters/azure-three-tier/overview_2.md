@@ -7,23 +7,9 @@ title: Overview
 
 - Authentication
 
-Azure AD can be used for authentication purposes of the todo application.
-It provides the features as well as UIs for tasks such as new user registration, multi factor authentication and self service password reset.
-Also provides useful ways to enforce password policies as well.
-
-Multi factor authentication:
-
-Multi factor authentication can be done using following:
-    1. Approve using Microsoft Autenticator app option
-    2. Mobile SMS code option
-    3. Mobile Call option
-    4. Email option
-    5. OATH token option
-
-Azure AD and Azure API manager for API permissions
-    1. Azure API Gateway will autneticate the user using Azure AD.
-    2. Azure AD provides a valid token to access the resource APIs.
-    2. Based on the token and claims received with user authentication, API Gateway will manage permissions for the users to access the APIs.
+Azure AD is used for user management and authentication purposes of the todo application.
+Username and password combination is used for the login purposes.
+Based on available permissions, user authorization for the APIs are carried out.
 
 - Create Todos
 [POST]
