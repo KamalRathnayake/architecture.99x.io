@@ -50,12 +50,16 @@ Here's the traffic flow and basic configuration of the architecture:
 
 **Why did we use Azure AD B2C?**
 
+Azure Active Directory B2C offers customer identity and access management in the cloud and it enables custom control of how your customers sign up, sign in, and manage their profiles when using iOS, Android, . NET, single-page (SPA), and other applications.
+
 **Why did we use a Virtual Network/VNET integration?**
 
 **Why did we use service endpoints?**
 [contrast with private endpoints]
 
 **Why did we use Azure Bastion?**
+
+To connect to an Azure SQL using an Azure Private Endpoint. Azure Bastion is a fully managed service that provides more secure and seamless Remote Desktop Protocol (RDP) and Secure Shell Protocol (SSH) access to Azure resources without any exposure through public IP addresses.
 
 ## Development View
 Technologies used for developing
