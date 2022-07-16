@@ -3,17 +3,17 @@ id: azure-three-tier-overview-1
 title: Overview
 ---
 
-# Overview - Azure Three Tier IaC Kickstarter
+# Azure App Service Kickstarter Template
 
-A kickstarter IaC template for Azure following the Three-Tier architecture design to jumpstart your app creation. 
+A kickstarter IaC template for Azure following the Three-Tier architecture design to jumpstart your app creation.
 
-This repository contains a sample Todo application containing five basic features that demonstrate the use and integration of different Azure services.  
+This repository contains a sample Todo application containing five basic features that demonstrate the use and integration of different Azure services.
 
 The following quality-attributes were considered:
 
-* High-scalability - Can handle up to 1 million requests per minute
-* Availability - Resiliency to regional data center outages
-* Security - Protected from common web app security threats, such as SQL injection, Cross-site-scripting attacks (XSS)
+* High Scalability - Horizontally scaling App Services
+* High Availability - Availability zones
+* Security - Protected from common web app security threats, such as SQL injection, Cross-site-scripting attacks (XSS) [Optional]
 
 The template is designed with modularity in mind, allowing flexibility to add/remove resources to cater to different requirements. 
 

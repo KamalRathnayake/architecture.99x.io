@@ -5,9 +5,9 @@ title: Overview
 
 # Technical Overview - Azure Three Tier IaC Kickstarter
 
-Followings are the quality attributes that we are designing this template for. 
+Followings are the quality attributes that we are designing this template for.
 
-*  Scalability 
+* Scalability
     - One million requests per minute
     - Scaling down when there are less requests
     - Use load balancers and horizontal scaling
@@ -17,12 +17,11 @@ Followings are the quality attributes that we are designing this template for.
     - The data must be redundant
     - Setup and automate backup data storage
 
-*  Security 
+*  Security
     - Only authenticated users can perform operations within the application
     - Generate audit logs for user actions
     - Apply data masking for user sensitive data in the database
     - Avoid exposing unnecessary resources (database, storage, etc) to public network
-
 
 # Modules
 
@@ -100,6 +99,6 @@ A unique identifier will be taken as a route parameter to identify the particula
 
 ## Authentication
 
-Azure AD is used for user management and authentication purposes of the todo application.
+Azure AD B2C is used for user management and authentication purposes of the todo application.
 Username and password combination is used for the login purposes.
 Based on available permissions, user authorization for the APIs are carried out.
