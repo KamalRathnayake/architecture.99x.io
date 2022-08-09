@@ -54,8 +54,15 @@ Azure Active Directory B2C offers customer identity and access management in the
 
 **Why did we use a Virtual Network/VNET integration?**
 
+We are introducing a virtual network to the architecture to make the communication secure between the App Service and the database. The App Service is integrated with the VNet using App Service regional VNet integration feature. Mainly due to increased flexibility when managing the future complexity and security of the application.
+
 **Why did we use service endpoints?**
-[contrast with private endpoints]
+We're going with Azure SQL the PaaS database platform on Azure as the data storage solution mainly due to it's wide use and extensibility of this template. To enable the communication from the VNet to the database we have two features provided by Azure.
+
+1. Private Endpoint Connections
+2. Service Endpoint Connections
+
+A private endpoint is a powerful feature that provides the PaaS service representation in the VNet as we virtual NIC that makes it possible to access the PaaS service (In this case Azure SQL database) with even VPN connections. But the con here is private endpoints are costly and for our requirements just having secure access to the database is enough won't require VPN connections to the database as well. In considering all this, We have decided to go ahead with service endpoint connectivity feature.
 
 **Why did we use Azure Bastion?**
 
