@@ -72,5 +72,27 @@ A private endpoint is a powerful feature that provides the PaaS service represen
 **Why did we use Azure Bastion?**
 
 ## Development View
-Technologies used for developing
-ASP.NET MVC, 
+
+### Authentication - Azure B2C
+
+* Azure AD Business to Customer is used as the user management mechanism
+* Users registers via username and password combination or using social logins such as Google, Facebook, etc.
+
+#### The Authentication Process
+* User enters credentials or chooses single sign-on using social login to register with the active directory.
+* Upon successful registration entire user management is done in Azure Active Directory.
+* On login, users choose social login or local login. Based on the selection authentication is done via social media account or local credential details in Azure AD.
+* Upon successful login, customer identity details are returned.
+
+![Azure B2C Auth flow](.\azure-b2c-auth-flow.png)
+
+### User Interface
+* Razor Pages
+
+### Backend
+* .NET 6.0
+* ASP.NET Core 6.0
+* EntityFrameworkCore
+
+### Database
+* Azure SQL
